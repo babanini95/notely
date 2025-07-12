@@ -12,7 +12,7 @@ func TestGetAPIKey(t *testing.T) {
 		expectedOutput string
 	}{
 		"should pass":         {inputAuth: "ApiKey theapikey", expectedOutput: "theapikey"},
-		"Authorization empty": {inputAuth: "", expectedOutput: ""},
+		"Authorization empty": {inputAuth: "", expectedOutput: "theapikey"},
 		"wrong auth header":   {inputAuth: "JWT thejwt", expectedOutput: ""},
 	}
 
